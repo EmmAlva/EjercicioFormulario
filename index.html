@@ -6,7 +6,7 @@
 </head>
 <body style="text-align: center;" >
 	<h1>Ficha de Datos</h1>
-	<form action="">
+	<form onsubmit="return false" action="">
 	<div>
 		<label for="nombre">Nombre</label><br>
 		<input id="nombre" type="text" pattern = "[A-Z a-z]+" required="">
@@ -18,7 +18,7 @@
 
 	<div>
 		<label for="number">DNI</label><br>
-		<input id="dni" type="number" pattern="[0-8]{8}" maxlength="8" required ="required">
+		<input id="dni" type="text" pattern="[0-9]{8}" maxlength="8" required ="required">
 	</div><br>
 	<div>
 		<label for="direccion">Dirección</label><br>
