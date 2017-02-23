@@ -8,14 +8,12 @@ function fichaCompleta(){
 	var direccion = document.getElementById("direccion").value
 	
 	if(nombre!== "" && apellido !== "" && dni !== "" && direccion!== ""){
-		elemento.innerHTML = 
+		elemento.innerHTML = "Resultados"+
 		"<li>Nombre: "+ nombre + "</li>"+
 		"<li> Apellido : " + document.getElementById("apellido").value + "</li>"+
 		"<li>DNI :" + document.getElementById("dni").value + "</li>"+
 		"<li> Dirección: " + document.getElementById("direccion").value +"</li>";
-
 	}
-
 	
 
 
