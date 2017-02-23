@@ -15,8 +15,22 @@
 		"<li> Dirección: " + document.getElementById("direccion").value +"</li>";
 	}
 
-	document.getElementById("nombre").value ="";
-	document.getElementById("apellido").value ="";
-	document.getElementById("dni").value ="";
-	document.getElementById("direccion").value ="";
+	
 }
+
+function allnumeric(dni)
+   {
+      var numbers = /^[0-9]+$/;
+      if(dni.value.match(numbers))
+      {
+      alert('Your Registration number has accepted....');
+      document.form1.text1.focus();
+      return true;
+  		}
+  		else
+      {
+      alert('Please input numeric characters only');
+      document.form1.text1.focus();
+      return false;
+      }
+   }
