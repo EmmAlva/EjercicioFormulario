@@ -14,4 +14,9 @@
 		"<li>DNI :" + document.getElementById("dni").value + "</li>"+
 		"<li> Dirección: " + document.getElementById("direccion").value +"</li>";
 	}
+
+	document.getElementById("nombre").value ="";
+	document.getElementById("apellido").value ="";
+	document.getElementById("dni").value ="";
+	document.getElementById("direccion").value ="";
 }
