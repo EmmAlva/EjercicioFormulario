@@ -6,14 +6,14 @@
 </head>
 <body style="text-align: center;" >
 	<h1>Ficha de Datos</h1>
-	<form onsubmit="return false" action="">
+	<form onsubmit="fichaCompleta();return false;">
 	<div>
 		<label for="nombre">Nombre</label><br>
-		<input id="nombre" type="text" pattern = "[A-Za-z]+" title="Completa el campo" required="">
+		<input id="nombre" type="text" pattern = "[A-Za-z]{0,50}" title="Completa el campo" required="">
 	</div><br>
 	<div>
 		<label for="apellido">Apellido</label><br>
-		<input id="apellido" type="text" pattern = "^[a-zA-Z\s]*$" required="">
+		<input id="apellido" type="text" pattern = "[A-Za-z]{0,50}" required="">
 	</div><br>
 	<div>
 		<label for="number">DNI</label><br>
@@ -24,7 +24,7 @@
 		<input id="direccion" type="text" pattern = "[A-Z a-z]+" required="">
 	</div><br>
 
-	<button type="button" onclick="fichaCompleta();return false">Enviar</button>
+	<button type="submit" >Enviar</button> 
 	<input type="reset" value ="Reset!">
 	</form><br>
 

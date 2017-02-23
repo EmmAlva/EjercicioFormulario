@@ -7,18 +7,14 @@
 	var dni = document.getElementById("dni").value
 	var direccion = document.getElementById("direccion").value
 	
-	if(nombre!== "" && apellido !== "" && dni !== "" && direccion!== ""){
-		elemento.innerHTML = "Resultados"+
+	elemento.innerHTML = "Resultados"+
 		"<li>Nombre: "+ nombre + "</li>"+
-		"<li> Apellido : " + document.getElementById("apellido").value + "</li>"+
+		"<li> Apellido : " + apellido + "</li>"+
 		"<li>DNI :" + document.getElementById("dni").value + "</li>"+
 		"<li> Dirección: " + document.getElementById("direccion").value +"</li>";
 	}
 
-	
-}
-
-function allnumeric(dni)
+/*function allnumeric(dni)
    {
       var numbers = /^[0-9]+$/;
       if(dni.value.match(numbers))
@@ -34,3 +30,4 @@ function allnumeric(dni)
       return false;
       }
    }
+*/
